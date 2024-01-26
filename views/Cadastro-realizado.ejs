@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Realizado</title>
+
+    <link rel="stylesheet" href="style-cadastro.css">
+
+</head>
+
+<body>
+    
+<div class="card">
+    <span class="card__title">Boas Notícias</span>
+    <p class="card__content">Seu cadastro foi realizado com sucesso, volte à página inicial para realizar o seu login.
+    </p>
+    <div class="card__form">
+        <button class="sign-up" onclick="redirectToMainPage()"> Fazer login</button>
+    </div>
+</div>
+
+
+<label class="switch" id="themeSwitch">
+    <input type="checkbox">
+    <span class="slider"></span>
+</label>
+
+
+<script>
+    function redirectToMainPage() {
+        // Use window.location.href para redirecionar para a página principal
+        window.location.href = "/";
+    }
+
+    const themeSwitch = document.getElementById('themeSwitch');
+
+        themeSwitch.addEventListener('change', function () {
+            document.body.classList.toggle('dark-theme');
+        });
+
+    
+</script>
+
+</body>
+
+</html>
