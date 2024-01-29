@@ -14,7 +14,7 @@
 
 <img
         align="center"
-        src="./Screenshot-Page.jpeg"
+        src="./src/Images/Screenshot-Page.jpeg"
         alt="Imagem ilustrativa da página"
       />
 
